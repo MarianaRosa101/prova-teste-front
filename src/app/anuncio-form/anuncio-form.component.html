@@ -1,0 +1,19 @@
+<form [formGroup]="anuncioForm" (ngSubmit)="cadastrarAnuncio()">
+    <label>Título:</label>
+    <input type="text" formControlName="titulo">
+  
+    <label>Descrição:</label>
+    <textarea formControlName="descricao"></textarea>
+  
+    <label>Preço:</label>
+    <input type="number" formControlName="preco">
+  
+    <label>Localização:</label>
+    <input type="text" formControlName="localizacao">
+  
+    <label>URL da Imagem:</label>
+    <input type="text" formControlName="urlImagem">
+  
+    <button type="submit">Cadastrar</button>
+  </form>
+  
